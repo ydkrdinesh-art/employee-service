@@ -11,8 +11,11 @@ public class EmployeeController {
     @GetMapping
     public String getEmployees() {
         return "Employee service is working";
-
-        }
     }
 
+    @GetMapping("/status")
+    public String getStatus() {
+        return "Employee service status: UP";
+    }
+}
 
